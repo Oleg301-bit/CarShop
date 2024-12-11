@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="form.css" />
+  </head>
+  <body>
+    <form>
+    <div class="all-contener">
+      <div>
+        <h3>Personal info</h3>
+
+        <p>First Name<input type="text" name="firstname" /></p>
+        <p>Last Name<input type="text" name="lastname" /></p>
+        <p>Birthday<input type="date" name="birthday" /></p>
+        <p>Gender</p>
+        <input type="radio" name="gender" value="male" required />Male
+        <input type="radio" name="gender" value="female" required />Female
+        <p>
+          <label id="experience">Drive experience</label>
+          <select id="experience" name="experience">
+            <option value="year">1 year</option>
+            <option value="fiveyear">5 years</option>
+            <option value="tenyears">10 years</option>
+            <option value="twyears">20 years</option>
+          </select>
+        </p>
+      </div>
+    
+      
+      <div>
+        <h3>Contacts</h3>
+        <p>Email<input type="email" name="email" /></p>
+        <p>Phone<input type="tel" name="phone" /></p>
+        <p>
+          <label for="address">Address</label>
+          <textarea id="address" name="address" required></textarea>
+        </p>
+      </div>
+      <div>
+        <h3>Car info</h3>
+
+        <p>
+          <label id="brand">Brand</label>
+          <select id="brand" name="brand">
+            <option value="Ford">Ford</option>
+            <option value="Toyota">Toyota</option>
+            <option value="BMW">BMW</option>
+          </select>
+        </p>
+        <p>
+          <label id="model">Model</label>
+          <select id="model">
+            <option value="Mondeo 4">Mondeo 4</option>
+            <option value="Fiesta 1.0">Fiesta 1.0</option>
+            <option value="RAV 4">RAV 4</option>
+            <option value="Camry">Camry</option>
+            <option value="X5">X5</option>
+            <option value="i4">i4</option>
+          </select>
+        </p>
+        <label> <input type="checkbox" name="use" />Used </label>
+        <p>Color</p>
+        <input type="radio" name="color" value="red" required />Red
+        <input type="radio" name="color" value="black" required />Black
+        <input type="radio" name="color" value="blue" required />Blue
+        <input type="radio" name="color" value="white" required />White
+        <input type="radio" name="color" value="grey" required />Grey
+        <p>
+          <label for="rangeinput">Price</label>
+          <input type="range" id="rangeinput" name="range" />
+        </p>
+      </div>
+      </div>
+    </form>
+  </body>
+</html>
