@@ -1,0 +1,75 @@
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1em;
+}
+.contener {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 4em;
+  background-color: black;
+  color: white;
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+}
+.list-item {
+  margin-left: 5em;
+}
+.set-image {
+  width: 7vw;
+  height: 10vh;
+}
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 3em;
+  font-weight: 800;
+}
+.main-cont {
+  max-width: 70%;
+  padding-left: 2em;
+}
+h2 {
+  font-weight: bold;
+}
+p {
+  line-height: 1.25;
+}
+h3 {
+  font-weight: bold;
+}
+.end-page-contener {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em 4em;
+  background-color: black;
+  color: white;
+}
+.end-list {
+  display: flex;
+  align-items: center;
+}
+.item-one {
+  padding-left: 6em;
+}
+.item-two {
+  padding-left: 8em;
+}
+.item-three {
+  padding-left: 14em;
+}
+.item-four {
+  padding-left: 8em;
+}
+a {
+  text-decoration: none;
+  color: white;
+  color: inherit;
+}
+.navi-rem {
+  color: blue;
+  text-decoration: underline;
+}
