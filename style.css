@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: "Times New Roman", Times, serif;
+}
+.header-contener {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em 3em;
+  background-color: rgb(10, 16, 40);
+  color: white;
+}
+.menu-list {
+  display: flex;
+}
+.list-item {
+  margin-left: 5em;
+}
+.logo-image {
+  width: 150px;
+  height: 150px;
+}
+.chapter-Ford {
+  padding: 2em 3em;
+}
+h1 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 2em;
+}
+h1::after {
+  content: "!";
+}
+h3,
+h2 {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.Ford-image,
+.Tayota-image,
+.BMW-image {
+  width: 200px;
+  height: 200px;
+}
+table {
+  width: 50%;
+  margin: 2em auto;
+  border: 2px solid teal;
+}
+
+caption::before {
+  content: "Table#2";
+}
+
+th,
+td {
+  border: 2px solid teal;
+  text-align: center;
+  font-weight: bold;
+  vertical-align: middle;
+}
+.footer-contener {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2em 3em;
+  background-color: rgb(10, 16, 40);
+  color: white;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+#navi-ford:hover,
+#navi-toyota:hover,
+#navi-bmw:hover,
+#navi-table:hover,
+#navi-form:hover {
+  background-color: darkblue;
+}
+
+a[href="#navi-ford"],
+a[href="#navi-toyota"],
+a[href="#navi-bmw"] {
+  color: blue;
+  text-decoration: underline;
+}

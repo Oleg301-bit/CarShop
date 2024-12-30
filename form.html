@@ -3,77 +3,110 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="form.css" />
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
   </head>
   <body>
     <form>
-    <div class="all-contener">
-      <div>
-        <h3>Personal info</h3>
+      <fieldset>
+        <legend>Personal info</legend>
+        <div>
+          <label for="text">First Name</label>
+          <input id="text" />
+        </div>
+        <div>
+          <label for="text1">Last Name</label>
+          <input id="text1" />
+        </div>
+        <div>
+          <label for="date">Birthday</label>
+          <input type="datetime-local" id="date" />
+        </div>
+        <div>
+          <label for="gender">Gender</label>
+        </div>
 
-        <p>First Name<input type="text" name="firstname" /></p>
-        <p>Last Name<input type="text" name="lastname" /></p>
-        <p>Birthday<input type="date" name="birthday" /></p>
-        <p>Gender</p>
-        <input type="radio" name="gender" value="male" required />Male
-        <input type="radio" name="gender" value="female" required />Female
-        <p>
-          <label id="experience">Drive experience</label>
-          <select id="experience" name="experience">
-            <option value="year">1 year</option>
-            <option value="fiveyear">5 years</option>
-            <option value="tenyears">10 years</option>
-            <option value="twyears">20 years</option>
-          </select>
-        </p>
-      </div>
-    
-      
-      <div>
-        <h3>Contacts</h3>
-        <p>Email<input type="email" name="email" /></p>
-        <p>Phone<input type="tel" name="phone" /></p>
-        <p>
-          <label for="address">Address</label>
-          <textarea id="address" name="address" required></textarea>
-        </p>
-      </div>
-      <div>
-        <h3>Car info</h3>
+        <label for="gender">Male</label>
+        <input type="radio" id="gender" name="gender" />
 
-        <p>
-          <label id="brand">Brand</label>
-          <select id="brand" name="brand">
-            <option value="Ford">Ford</option>
-            <option value="Toyota">Toyota</option>
-            <option value="BMW">BMW</option>
+        <label for="gender">Female</label>
+        <input type="radio" id="gender" name="gender" />
+        <div>
+          <label for="exp">Drive Experience</label>
+          <select name="exp" id="exp">
+            <option value="---" selected>---</option>
+            <option value="1 year">1 year</option>
+            <option value="2 years">2 years</option>
           </select>
-        </p>
-        <p>
-          <label id="model">Model</label>
-          <select id="model">
-            <option value="Mondeo 4">Mondeo 4</option>
-            <option value="Fiesta 1.0">Fiesta 1.0</option>
-            <option value="RAV 4">RAV 4</option>
-            <option value="Camry">Camry</option>
-            <option value="X5">X5</option>
-            <option value="i4">i4</option>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Contacts</legend>
+        <div>
+          <label for="email">Email</label>
+          <input type="email" id="email" />
+        </div>
+        <div>
+          <label for="tel">Phone</label>
+          <input id="tel" />
+        </div>
+        <div>
+          <label for="adr">Address</label>
+          <textarea name="adr" id="adr" rows="5" cols="33"></textarea>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Car info</legend>
+        <div>
+          <label for="brand">Brand</label>
+          <select name="brand" id="brand">
+            <option value="---" selected>---</option>
+            <option value="old">old</option>
+            <option value="knew">knew</option>
           </select>
-        </p>
-        <label> <input type="checkbox" name="use" />Used </label>
-        <p>Color</p>
-        <input type="radio" name="color" value="red" required />Red
-        <input type="radio" name="color" value="black" required />Black
-        <input type="radio" name="color" value="blue" required />Blue
-        <input type="radio" name="color" value="white" required />White
-        <input type="radio" name="color" value="grey" required />Grey
-        <p>
-          <label for="rangeinput">Price</label>
-          <input type="range" id="rangeinput" name="range" />
-        </p>
-      </div>
-      </div>
+        </div>
+        <div>
+          <label for="model">Model</label>
+          <select name="model" id="model">
+            <option value="---" selected>---</option>
+            <option value="old">old</option>
+            <option value="knew">knew</option>
+          </select>
+        </div>
+        <div>
+          <label for="Used">Used</label>
+          <input type="checkbox" id="Used" />
+        </div>
+        <div>
+          <label for="color">Color</label>
+        </div>
+        <div>
+          <label for="red">Red</label>
+          <input type="radio" id="red" name="color" />
+          <label for="black">Black</label>
+          <input type="radio" id="black" name="color" />
+          <label for="blue">Blue</label>
+          <input type="radio" id="blue" name="color" />
+          <label for="white">White</label>
+          <input type="radio" id="white" name="color" />
+          <label for="red">Grey</label>
+          <input type="radio" id="grey" name="color" />
+        </div>
+        <div>
+          <label for="pr">Price</label>
+          <input type="range" id="pr" list="mlist" />
+          <datalist id="mlist">
+            <option value="0"></option>
+            <option value="25"></option>
+            <option value="50"></option>
+            <option value="75"></option>
+            <option value="100"></option>
+          </datalist>
+        </div>
+      </fieldset>
+      <button type="reset">Cancel</button>
+      <button type="submit">Ok</button>
+
     </form>
   </body>
 </html>
