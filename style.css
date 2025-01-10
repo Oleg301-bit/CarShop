@@ -45,9 +45,11 @@ h2 {
   height: 200px;
 }
 table {
-  width: 50%;
+  max-width: 200px;
+  min-width: 30%;
   margin: 2em auto;
   border: 2px solid teal;
+  border-collapse: separate;
 }
 
 caption::before {
